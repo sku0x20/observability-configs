@@ -1,0 +1,8 @@
+services:
+  collector:
+    image: otel/opentelemetry-collector:latest
+    volumes:
+      - ./otel-config.yaml:/otel-config.yaml
+    command: [ "--config=/otel-config.yaml" ]
+    ports:
+      - "4317:4317/tcp"
