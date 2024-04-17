@@ -7,8 +7,19 @@ exporters:
     endpoint: vector:4317
     tls:
       insecure: true
+processors:
+  transform:
+    log_statements:
+      - context: log
+        statements:
+          - set(body, Concat([time, body], " "))
 service:
   pipelines:
     logs:
       receivers: [ otlp ]
+      processors: [ transform ]
       exporters: [ otlp ]
+
+# https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/pkg/ottl/ottlfuncs/README.md#concat
+# https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor
+# https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/pkg/ottl/contexts/ottllog
