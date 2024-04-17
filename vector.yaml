@@ -15,3 +15,6 @@ sinks:
       - otel.logs
     encoding:
       codec: "text"
+
+
+# todo: https://vector.dev/docs/reference/vrl/examples/
