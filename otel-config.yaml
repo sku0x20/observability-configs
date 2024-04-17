@@ -7,8 +7,8 @@ exporters:
     endpoint: vector:4317
     tls:
       insecure: true
-  logging:
-    verbosity: detailed
+#  logging:
+#    verbosity: detailed
 #processors:
 #  transform:
 #    log_statements:
@@ -20,7 +20,7 @@ service:
     logs:
       receivers: [ otlp ]
 #      processors: [ transform ]
-      exporters: [ otlp,  logging ]
+      exporters: [ otlp ]
 
 # https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/pkg/ottl/ottlfuncs/README.md#concat
 # https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor
