@@ -1,0 +1,17 @@
+sources:
+  otel:
+    type: opentelemetry
+    grpc:
+      address: 0.0.0.0:4317
+    http:
+      address: 0.0.0.0:4317
+      keepalive:
+        max_connection_age_jitter_factor: 0.1
+        max_connection_age_secs: 300
+sinks:
+  out:
+    type: "console"
+    inputs:
+      - otel.logs
+    encoding:
+      codec: "text"

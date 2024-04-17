@@ -5,4 +5,11 @@ services:
       - ./otel-config.yaml:/otel-config.yaml
     command: [ "--config=/otel-config.yaml" ]
     ports:
+      - "4318:4317/tcp"
+  vector:
+    image: timberio/vector:0.37.1-debian
+    volumes:
+      - ./vector.yaml:/vector.yaml
+    command: [ "--config", "/vector.yaml" ]
+    ports:
       - "4317:4317/tcp"
