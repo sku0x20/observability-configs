@@ -26,4 +26,10 @@ sinks:
       codec: "text"
 
 
-# todo: https://vector.dev/docs/reference/vrl/examples/
+# https://github.com/vectordotdev/vector/issues/12823
+# https://github.com/vectordotdev/vector/issues/4122
+# https://github.com/vectordotdev/vector/issues/2774
+# https://linux.die.net/man/8/logrotate
+# https://github.com/vectordotdev/vector/issues/2055
+# https://github.com/vectordotdev/vector/issues/2057
+# https://github.com/vectordotdev/vector/issues/2173
