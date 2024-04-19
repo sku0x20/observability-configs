@@ -9,7 +9,7 @@ exporters:
       insecure: true
   file:
     path: /tmp/logs.json
-    format: json
+#    encoding: otlp_json
 #  logging:
 #    verbosity: detailed
 #processors:
@@ -29,3 +29,5 @@ service:
 # https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor
 # https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/pkg/ottl/contexts/ottllog
 # https://opentelemetry.io/docs/collector/configuration/#pipelines
+# https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/extension/encoding/textencodingextension
+#   - encoding support not there yet

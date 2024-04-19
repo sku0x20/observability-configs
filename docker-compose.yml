@@ -1,6 +1,7 @@
 services:
   collector:
     image: otel/opentelemetry-collector-contrib:latest
+#    image: otel/opentelemetry-collector-contrib-dev:latest
     volumes:
       - ./otel-config.yaml:/otel-config.yaml
       - ./build/tmp:/tmp
