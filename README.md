@@ -1,3 +1,9 @@
+grafana otel-lgmt
+exporter -> OTLP
+    Json -> Line format
+            {{.body}}
+
+
 https://opentelemetry.io/docs/specs/otel/logs/  
 https://github.com/open-telemetry/opentelemetry-java-examples/tree/main/log-appender  
 https://opentelemetry.io/docs/collector/configuration/#receivers  

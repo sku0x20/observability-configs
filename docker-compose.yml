@@ -19,6 +19,13 @@ services:
       - "4327:4317/tcp"
     networks:
       - log_network
+  grafana:
+    image: grafana/otel-lgtm:latest
+    ports:
+      - "4337:4317/tcp"
+      - "3000:3000/tcp"
+    networks:
+      - log_network
 
 networks:
   log_network: { }

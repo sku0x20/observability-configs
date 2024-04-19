@@ -3,8 +3,12 @@ receivers:
     protocols:
       grpc:
 exporters:
-  otlp:
+  otlp/vector:
     endpoint: vector:4317
+    tls:
+      insecure: true
+  otlp/grafana:
+    endpoint: grafana:4317
     tls:
       insecure: true
   file:
@@ -23,7 +27,7 @@ service:
     logs:
       receivers: [ otlp ]
       #      processors: [ transform ]
-      exporters: [ file ]
+      exporters: [ otlp/grafana ]
 
 # https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/pkg/ottl/ottlfuncs/README.md#concat
 # https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor
