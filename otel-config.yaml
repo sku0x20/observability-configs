@@ -7,6 +7,9 @@ exporters:
     endpoint: vector:4317
     tls:
       insecure: true
+  file:
+    path: /tmp/logs.json
+    format: json
 #  logging:
 #    verbosity: detailed
 #processors:
@@ -19,8 +22,8 @@ service:
   pipelines:
     logs:
       receivers: [ otlp ]
-#      processors: [ transform ]
-      exporters: [ otlp ]
+      #      processors: [ transform ]
+      exporters: [ file ]
 
 # https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/pkg/ottl/ottlfuncs/README.md#concat
 # https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor
