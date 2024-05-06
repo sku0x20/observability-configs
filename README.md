@@ -28,6 +28,8 @@ https://github.com/influxdata/influxdb
 https://matomo.org/
 https://signoz.io/blog/opentelemetry-logs/
 https://hub.docker.com/r/grafana/otel-lgtm
+https://dev.splunk.com/enterprise/docs/developapps/addsupport/logging/
+https://hub.docker.com/r/splunk/splunk/
 
 https://stackoverflow.com/questions/10525725/which-nosql-database-should-i-use-for-logging
 https://www.reddit.com/r/ExperiencedDevs/comments/17d876h/where_to_store_logs/
