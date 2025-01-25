@@ -17,6 +17,7 @@
                     eventTemplateUri="file:///D:/projects/observability-configs/kotlin-logs/custom_layout.json"/>
             <LogLevelLabel>level</LogLevelLabel>
             <Label name="service_name">kotlin-logs</Label>
+            <Label name="name">example-logs</Label>
         </Loki>
     </Appenders>
 
