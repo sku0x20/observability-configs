@@ -17,6 +17,8 @@ System.setProperty("log4j2.configurationFile", "file:///D:/projects/observabilit
 val logger: Logger = LogManager.getLogger()
 
 logger.info("plain old message")
+Thread.sleep(10)
 logger.error("some error message!!!")
+Thread.sleep(10)
 logger.error("exception", RuntimeException("runtime exception"))
 
