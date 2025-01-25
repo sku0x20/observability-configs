@@ -4,7 +4,8 @@
     "org.apache.logging.log4j:log4j-api:2.24.3",
     "org.apache.logging.log4j:log4j-core:2.24.3", // runtime only
     "org.apache.logging.log4j:log4j-layout-template-json:2.24.3", // runtime only
-    "com.lmax:disruptor:4.0.0" // runtime only
+    "com.lmax:disruptor:4.0.0", // runtime only
+    "pl.tkowalcz.tjahzi:log4j2-appender-nodep:0.9.17"
 )
 
 import org.apache.logging.log4j.LogManager
