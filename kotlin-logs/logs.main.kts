@@ -21,4 +21,8 @@ Thread.sleep(10)
 logger.error("some error message!!!")
 Thread.sleep(10)
 logger.error("exception", RuntimeException("runtime exception"))
+Thread.sleep(10)
+logger.info("info error message")
+Thread.sleep(10)
+logger.error("error error message")
 
