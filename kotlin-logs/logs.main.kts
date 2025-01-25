@@ -11,7 +11,7 @@ import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 
 System.setProperty("log4j2.contextSelector", "org.apache.logging.log4j.core.async.BasicAsyncLoggerContextSelector")
-System.setProperty("log4j2.configurationFile", "kotlin-logs/log4j2.xml")
+System.setProperty("log4j2.configurationFile", "file:///D:/projects/observability-configs/kotlin-logs/log4j2.xml")
 
 val logger: Logger = LogManager.getLogger()
 
