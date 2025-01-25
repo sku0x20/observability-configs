@@ -3,7 +3,7 @@
     "$resolver": "timestamp",
     "pattern": {
       "format": "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'",
-      "timeZone": "UTC"
+      "timeZone": "Asia/Kolkata"
     }
   },
   "level": {
