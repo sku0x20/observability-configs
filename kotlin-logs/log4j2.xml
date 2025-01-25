@@ -6,7 +6,7 @@
 
     <Appenders>
         <Console name="CONSOLE">
-            <JsonTemplateLayout/>
+            <JsonTemplateLayout eventTemplateUri="file:///D:/projects/observability-configs/kotlin-logs/custom_layout.json"/>
         </Console>
     </Appenders>
 

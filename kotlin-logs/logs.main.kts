@@ -13,4 +13,7 @@ System.setProperty("log4j2.configurationFile", "kotlin-logs/log4j2.xml")
 
 val logger: Logger = LogManager.getLogger()
 
-logger.info("test message")
+logger.info("plain old message")
+logger.error("some error message!!!")
+logger.error("exception", RuntimeException("runtime exception"))
+
