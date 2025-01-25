@@ -15,7 +15,7 @@
             <port>3100</port>
             <JsonTemplateLayout
                     eventTemplateUri="file:///D:/projects/observability-configs/kotlin-logs/custom_layout.json"/>
-            <LogLevelLabel>log_level</LogLevelLabel>
+            <LogLevelLabel>level</LogLevelLabel>
             <Label name="service_name">kotlin-logs</Label>
         </Loki>
     </Appenders>
