@@ -25,13 +25,13 @@ schema_config:
         prefix: index_
         period: 24h
 
-#limits_config:
-#  max_query_lookback: 192h # 8 days
-#  retention_period: 192h   # 8 days
-#
-#compacter:
-#  retention_enabled: true
-#  delete_request_store: filesystem
+limits_config:
+  max_query_lookback: 192h # 8 days
+  retention_period: 192h   # 8 days
+
+compactor:
+  retention_enabled: true
+  delete_request_store: filesystem
 
 ruler:
   alertmanager_url: http://localhost:9093
